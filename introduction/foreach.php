@@ -17,6 +17,11 @@ $contasCorrentes = [
   ]
 ];
 
+$contasCorrentes['123.258.852-12'] = [
+  'titular' => 'Claudia',
+  'saldo' => 2000
+];
+
 foreach ($contasCorrentes as $cpf => $conta) {
-  echo $cpf . PHP_EOL;
+  echo $cpf . " " . $conta['titular'] . PHP_EOL;
 }
