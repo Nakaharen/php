@@ -1,0 +1,5 @@
+- uma função encapsula uma funcionalidade/um código
+- uma função usa a palavra chave function, possui um nome, pode ter parâmetros, tem um corpo e pode ter um retorno
+- para chamar uma função usamos o nome dela passando o valor dos parâmetros
+- uma função pode especificar os tipos na declaração do parâmetro (a partir da versão 7), como também o tipo do retorno
+- Uma função retorna um valor, ou seja, a chamada da função representa um valor após sua execução != subrotina que apenas executa um código isolado.
