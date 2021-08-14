@@ -28,3 +28,17 @@ function depositar(array $conta, float $valorADepositar)
   $conta['saldo'] += $valorADepositar;
   return $conta;
 }
+
+function titularComLetrasMaiusculas(array &$conta)
+{
+  $conta['titular'] = strtoupper($conta['titular']);
+}
+
+/*
+    Referência -> Modifica o original.
+    Usar muitas referências pode bagunçar o código, pois isso dá acesso total
+    à variável.
+
+    Valor -> Modifica a cópia, sem alterar o original.
+    Por valor se garante a segurança dos dados.
+*/
