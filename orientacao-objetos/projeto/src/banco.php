@@ -2,10 +2,10 @@
 
 require_once 'Conta.php';
 
-$primeiraConta = new Conta();
+$primeiraConta = new Conta('123.456.789-10', 'Karen Nakahara');
 $primeiraConta->depositar(500);
 $primeiraConta->sacar(300);
-$primeiraConta->definirCpfTitular('123.456.789-10');
 
-echo $primeiraConta->recuperarSaldo();
-echo $primeiraConta->recuperarCpfTitular();
+echo $primeiraConta->recuperarNomeTitular() . PHP_EOL;
+echo $primeiraConta->recuperarCpfTitular() . PHP_EOL;
+echo $primeiraConta->recuperarSaldo() . PHP_EOL;
