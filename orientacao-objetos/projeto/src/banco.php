@@ -12,3 +12,6 @@ echo $primeiraConta->recuperarSaldo() . PHP_EOL;
 
 $segundaConta = new Conta('123.456.789-20', 'Sophie Maria');
 var_dump($segundaConta);
+
+
+echo Conta::recuperarNumeroDeContas();
