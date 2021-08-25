@@ -1,10 +1,10 @@
 <?php
 
-require_once 'Pessoa.php';
-require_once 'Conta.php';
-require_once 'Titular.php';
-require_once 'CPF.php';
-require_once 'Endereco.php';
+require_once 'Modelo/Pessoa.php';
+require_once 'Modelo/Conta/Conta.php';
+require_once 'Modelo/Conta/Titular.php';
+require_once 'Modelo/CPF.php';
+require_once 'Modelo/Endereco.php';
 
 $endereco = new Endereco('São José dos Campos', 'meu bairro', 'minha rua', '31A' );
 $karen = new Titular(new CPF('123.456.789-10'), 'Karen Nakahara', $endereco);
