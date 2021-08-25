@@ -1,14 +1,13 @@
 <?php
 
+
 class Titular extends Pessoa
 {
     private $endereco;
 
     public function __construct(CPF $cpf, string $nome, Endereco $endereco)
     {
-        $this->cpf = $cpf;
-        $this->validarNomeTitular($nome);
-        $this->nome = $nome;
+        parent::__construct($nome, $cpf);
         $this->endereco = $endereco;
     }
 

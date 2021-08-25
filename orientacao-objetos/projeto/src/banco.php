@@ -1,5 +1,6 @@
 <?php
 
+require_once 'Pessoa.php';
 require_once 'Conta.php';
 require_once 'Titular.php';
 require_once 'CPF.php';
