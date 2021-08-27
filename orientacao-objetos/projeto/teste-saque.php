@@ -12,7 +12,8 @@ $conta = new Conta(
         new CPF('123.456.789-10'),
         'Karen Nakahara',
         new Endereco('São José dos Campos', 'bairro teste', 'rua teste', '123')
-    )
+    ),
+    2
 );
 
 $conta->depositar(500);
