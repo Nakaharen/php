@@ -12,13 +12,13 @@ abstract class Conta
     {
         $this->titular = $titular;
         $this->saldo = 0;
+
         self::$numeroDeContas++;
     }
 
     public function __destruct()
     {
         self::$numeroDeContas--;
-
     }
 
     public function sacar(float $valorASacar): void
