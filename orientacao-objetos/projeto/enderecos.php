@@ -8,5 +8,8 @@ $umEndereco = new Endereco('São José dos Campos', 'bairro qualquer', 'minha ru
 
 $outroEndereco = new Endereco('São Paulo', 'Centro', 'uma rua aí', '12');
 
+echo $umEndereco->cidade;
+exit();
+
 echo $umEndereco . PHP_EOL;
 echo $outroEndereco . PHP_EOL;
