@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 require 'ArrayUtils.php';
 
@@ -17,7 +17,7 @@ echo "<pre>";
 
 var_dump($correntistas_e_compras);
 
-ArrayUtils::remover("Karen", $correntistas_e_compras);
+ArrayUtils::remover(21, $correntistas_e_compras);
 
 var_dump($correntistas_e_compras);
 
