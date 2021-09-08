@@ -1,5 +1,7 @@
 <?php declare(strict_types=1);
 
+namespace Alura;
+
 class ArrayUtils
 {
   public static function remover(int $elemento, array &$array)
