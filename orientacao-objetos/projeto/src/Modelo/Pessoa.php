@@ -11,7 +11,7 @@ abstract class Pessoa
 
     public function __construct(string $nome, CPF $cpf)
     {
-        $this->validarNome($nome);
+        $this->validarNomeTitular($nome);
         $this->nome = $nome;
         $this->cpf = $cpf;
     }

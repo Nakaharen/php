@@ -1,6 +1,6 @@
 <?php
 
-use Alura\Banco\Modelo\Conta\{ContaPoupanca, ContaCorrente, Titular};
+use Alura\Banco\Modelo\Conta\{ContaPoupanca, ContaCorrente, SaldoInsuficienteException, Titular};
 use Alura\Banco\Modelo\{CPF, Endereco};
 
 require_once 'autoload.php';
@@ -14,6 +14,10 @@ $conta = new ContaPoupanca(
 );
 
 $conta->depositar(500);
-$conta->sacar(100);
 
-echo $conta->recuperarSaldo();
+try {
+    $conta->sacar(600);
+} catch (SaldoInsuficienteException $exception){
+    echo "Saldo insuficiente para realizar essa transação." . PHP_EOL;
+    echo $exception->getMessage();
+}
